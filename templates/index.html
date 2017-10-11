@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <form class="goldbox" method="post">
+        <label for="gold">Your Gold: </label>
+        <input type="text" name="goldamount" value="{{session['total_gold']}}" disabled>
+      </form>
+      <form class="resetbutton" action="/reset" method="post">
+        <input type="submit" value="RESET!">
+      </form>
+
+      <div class="main-boxes">
+        <div class="findbox">
+          <h3>Farm</h3>
+          <p>(earns 10-20 golds)</p>
+          <form class="farmform" action="/process_money" method="post">
+            <input type="hidden" name="building" value="farm">
+            <input type="submit" value="Find Gold!">
+          </form>
+        </div>
+        <div class="findbox">
+          <h3>Cave</h3>
+          <p>(earns 5-10 golds)</p>
+          <form class="caveform" action="/process_money" method="post">
+            <input type="hidden" name="building" value="cave">
+            <input type="submit" value="Find Gold!">
+          </form>
+        </div>
+        <div class="findbox">
+          <h3>House</h3>
+          <p>(earns 2-5 golds)</p>
+          <form class="houseform" action="/process_money" method="post">
+            <input type="hidden" name="building" value="house">
+            <input type="submit" value="Find Gold!">
+          </form>
+        </div>
+        <div class="findbox">
+          <h3>Casino</h3>
+          <p>(earns/takes 0-50 golds)</p>
+          <form class="casinoform" action="/process_money" method="post">
+            <input type="hidden" name="building" value="casino">
+            <input type="submit" value="Find Gold!">
+          </form>
+        </div>
+
+        <p id="activities_text">Activities:</p>
+
+        <div id="activity_box">
+          {% if session['x']%}
+          <p class="">{{session['x']}}</p>
+          {% endif %}
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

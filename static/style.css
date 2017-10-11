@@ -1,0 +1,61 @@
+.wrapper{
+  width: 970px;
+  height: 765px;
+  /*background-image: url(https://static.giantbomb.com/uploads/original/13/134184/2230664-mgs___grey_fox.jpg);*/
+  /*border: 2px dotted blue;*/
+  margin: 0 auto;
+  font-family: Impact, Charcoal, sans-serif;
+  background-color: #060201;
+  color: white;
+}
+.goldbox{
+  display: inline-block;
+}
+.resetbutton{
+  display: inline-block;
+}
+.main-boxes{
+  display: inline-block;
+  /*border: 1px dotted blue;*/
+  height: 191px;
+}
+.findbox{
+  display: inline-block;
+  border: 1px dotted blue;
+  background-image: url('https://t00.deviantart.net/0hBLrcC3r2qkCPrMRvGu8IjEHro=/fit-in/700x350/filters:fixed_height(100,100):origin()/pre00/b72a/th/pre/i/2008/167/1/5/gray_fox___metal_gear_solid_by_takerus.jpg');
+  height: 175px;
+  width: 220px;
+  margin-left: 10px;
+  /*background-color: white;*/
+  /*opacity: 0.8;*/
+}
+.findbox
+.main-boxes h3{
+  font-family: Impact, Charcoal, sans-serif;
+  text-align: center;
+
+}
+.main-boxes{
+  color: black;
+  font-family: Impact, Charcoal, sans-serif;
+  text-align: center;
+}
+#activities_text{
+  text-align: left;
+  font-family: arial;
+  margin: 5px 20px 0px 10px;
+  color: white;
+}
+#activity_box{
+  border: 1px dotted blue;
+  width: 931px;
+  height: 520px;
+  margin-left: 10px;
+  /*background-color: white;*/
+  /*opacity: .9;*/
+  background-image: url(https://static.giantbomb.com/uploads/original/13/134184/2230664-mgs___grey_fox.jpg);
+}
+#activity_box p{
+  text-align: left;
+  width: 250px;
+}
